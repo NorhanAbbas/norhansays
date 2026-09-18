@@ -1,114 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Norhan Says</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: #f7f4ef;
-      color: #222;
-      font-family: Georgia, "Times New Roman", serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-main {
-    width: 90%;
-    max-width: 760px;
-    padding: 60px;
-
-    border: 1px solid #222;
-    margin: 40px;
-}
-
-    h1 {
-      font-size: clamp(3.5rem, 10vw, 7rem);
-      font-weight: 500;
-      letter-spacing: -4px;
-      margin: 0 0 50px;
-      line-height: 0.9;
-    }
-
-    .intro {
-      font-size: clamp(1.5rem, 3vw, 2.1rem);
-      line-height: 1.35;
-      margin-bottom: 35px;
-    }
-
-    .about {
-      font-family: Arial, sans-serif;
-      font-size: 1.05rem;
-      line-height: 1.8;
-      max-width: 650px;
-      margin-bottom: 40px;
-    }
-
-    .disclaimer {
-      font-family: Arial, sans-serif;
-      font-size: 0.9rem;
-      line-height: 1.6;
-      opacity: 0.65;
-      font-style: italic;
-      margin-bottom: 55px;
-    }
-
-    .soon {
-      font-family: Arial, sans-serif;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    @media (max-width: 600px) {
-      main {
-        padding: 50px 10px;
-      }
-
-      h1 {
-        letter-spacing: -2px;
-        margin-bottom: 35px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <main>
 
-    <h1>Norhan<br>Says.</h1>
+    <!-- INTRO -->
+    <header class="hero">
 
-    <p class="intro">
-      Apparently social media, friends, and therapy weren't enough,
-      so now I have a website :D
-    </p>
+      <h1>Norhan<br>Says.</h1>
 
-    <p class="about">
-      Some self-reflection, lessons learned, professional dilemmas, cool projects, hobbies, recipes, 
-      and, of course, some tea.. chaos, friends, family, dating, traumas, self growth 
-      and many other things nobody asked me to publish.
-    </p>
+      <p class="intro">
+        Apparently social media, friends, and therapy weren't enough,
+        so now I have a website :D
+      </p>
 
-    <p class="disclaimer">
-      Might be real. Might not be. Might be mine, a friend's,
-      or an imaginary friend of ours :D
-    </p>
+      <p class="mini-bio">
+        I'm Norhan. I make things, overthink other things,
+        and rarely put either on the internet.
+        <span class="bio-aside">
+          Well... maybe occasionally now that I have a website.
+        </span>
+      </p>
 
-    <p class="soon">
-      Apparently not much to say yet, more soon!
-    </p>
+    </header>
+
+
+    <!-- COLLECTIONS -->
+    <section class="collections">
+
+      <p class="section-label">
+        Things that live here
+      </p>
+
+
+      <!-- CORPORATE SPARKLES -->
+      <article class="collection sparkles">
+
+        <span class="number">01</span>
+
+        <h2>
+          Corporate Sparkles ✦
+        </h2>
+
+        <p>
+          mini desserts brought into corporate environments under the
+          assumption that sugar improves morale
+          (and such calories go to the heart not the stomach).
+        </p>
+
+        <a href="corporate-sparkles.html">
+          .. stuff ..
+        </a>
+
+      </article>
+
+
+      <!-- ART THINGIES -->
+      <article class="collection art right">
+
+        <span class="number">02</span>
+
+        <h2>
+          Art Thingies<br>
+          That Didn't Fail
+        </h2>
+
+        <p class="title-aside">
+          maybe I'll change this later
+        </p>
+
+        <p>
+          Things I made that passed some standards.
+        </p>
+
+        <a href="art-thingies.html">
+          .. stuff ..
+        </a>
+
+      </article>
+
+
+      <!-- LORE -->
+      <article class="collection lore">
+
+        <span class="number">03</span>
+
+        <h2>
+          Lore Nobody<br>
+          Requested -literally! 
+        </h2>
+
+        <p>
+          questionable decisions, messy conversations,
+          chaos, and a bunch of context
+          literally nobody asked for.
+        </p>
+
+        <a href="lore.html">
+          .. stuff ..
+        </a>
+
+      </article>
+
+
+      <!-- EVERYTHING ELSE -->
+      <article class="collection other">
+
+        <span class="number">+</span>
+
+        <h2>
+          Other Things
+        </h2>
+
+        <p>
+          everything needs a category.<br>
+          but maybe this one doesn't.. who knows!
+        </p>
+
+      </article>
+
+    </section>
+
+
+    <!-- DISCLAIMER -->
+    <footer>
+
+      <p class="disclaimer">
+        Might be real. Might not be. Might be mine, a friend's,
+        or an imaginary friend of ours :D
+      </p>
+
+    </footer>
 
   </main>
 
 </body>
+
 </html>
