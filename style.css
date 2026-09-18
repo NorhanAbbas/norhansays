@@ -10,8 +10,12 @@ body {
   color: #222;
 
   font-family: Georgia, "Times New Roman", serif;
+  
 }
 
+body {
+  background: red !important;
+}
 
 /* MAIN PAGE */
 
