@@ -1,0 +1,31 @@
+.sparkles .number {
+  color: #E6A817;
+}
+
+.art .number {
+  color: #3659B8;
+}
+
+.lore .number {
+  color: #9A3F5F;
+}
+
+.collection h2,
+.collection a {
+  transition: color 0.25s ease;
+}
+
+.sparkles:hover h2,
+.sparkles:hover a {
+  color: #E6A817;
+}
+
+.art:hover h2,
+.art:hover a {
+  color: #3659B8;
+}
+
+.lore:hover h2,
+.lore:hover a {
+  color: #9A3F5F;
+}
