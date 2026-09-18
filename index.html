@@ -28,7 +28,10 @@
       border: 1px solid #222;
     }
 
-    /* TOP OF THE PAGE */
+
+    /* =========================
+       TOP
+       ========================= */
 
     h1 {
       font-size: clamp(3.5rem, 10vw, 7rem);
@@ -54,13 +57,15 @@
 
     .bio-aside {
       display: block;
-      margin-top: 5px;
+      margin-top: 6px;
       opacity: 0.55;
       font-style: italic;
     }
 
 
-    /* COLLECTIONS */
+    /* =========================
+       COLLECTIONS
+       ========================= */
 
     .collections {
       border-top: 1px solid #222;
@@ -68,12 +73,12 @@
     }
 
     .section-label {
+      margin: 0 0 65px;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 0.72rem;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2.5px;
-      margin: 0 0 65px;
     }
 
     .collection {
@@ -88,11 +93,11 @@
 
     .number {
       display: block;
+      margin-bottom: 12px;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 0.72rem;
       font-weight: bold;
       letter-spacing: 2px;
-      margin-bottom: 12px;
     }
 
     .collection h2 {
@@ -101,8 +106,8 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(2.2rem, 5vw, 3.6rem);
       font-weight: 500;
-      letter-spacing: -1.5px;
       line-height: 1;
+      letter-spacing: -1.5px;
       transition: color 0.25s ease;
     }
 
@@ -117,6 +122,11 @@
     .collection.right p {
       margin-left: auto;
     }
+
+
+    /* =========================
+       LINKS
+       ========================= */
 
     .collection a {
       display: inline-block;
@@ -133,7 +143,9 @@
     }
 
 
-    /* LITTLE SIDE COMMENT */
+    /* =========================
+       LITTLE COMMENTS
+       ========================= */
 
     .title-aside {
       margin-top: -10px !important;
@@ -144,7 +156,9 @@
     }
 
 
-    /* SMALL COLOR ACCENTS */
+    /* =========================
+       COLORS
+       ========================= */
 
     .sparkles .number {
       color: #c78d16;
@@ -174,7 +188,9 @@
     }
 
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+       ========================= */
 
     footer {
       border-top: 1px solid #222;
@@ -191,7 +207,9 @@
     }
 
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+       ========================= */
 
     @media (max-width: 600px) {
 
@@ -226,17 +244,25 @@
         margin-left: 0;
       }
     }
-  </style>
 
+  </style>
 </head>
+
 
 <body>
 
   <main>
 
-    <header class="hero">
+    <!-- =====================
+         INTRO
+         ===================== -->
 
-      <h1>Norhan<br>Says.</h1>
+    <header>
+
+      <h1>
+        Norhan<br>
+        Says.
+      </h1>
 
       <p class="intro">
         Apparently social media, friends, and therapy weren't enough,
@@ -255,6 +281,10 @@
     </header>
 
 
+    <!-- =====================
+         COLLECTIONS
+         ===================== -->
+
     <section class="collections">
 
       <p class="section-label">
@@ -268,7 +298,9 @@
 
         <span class="number">01</span>
 
-        <h2>Corporate Sparkles ✦</h2>
+        <h2>
+          Corporate Sparkles ✦
+        </h2>
 
         <p>
           mini desserts brought into corporate environments under the
@@ -333,116 +365,8 @@
       </article>
 
 
-      <!-- OTHER -->
+      <!-- OTHER THINGS -->
 
-      <article class="collection other">
-
-        <span class="number">+</span>
-
-        <h2>Other Things</h2>
-
-        <p>
-          everything needs a category.<br>
-          but maybe this one doesn't.. who knows!
-        </p>
-
-      </article>
-
-    </section>
-
-
-    <footer>
-
-      <p class="disclaimer">
-        Might be real. Might not be. Might be mine, a friend's,
-        or an imaginary friend of ours :D
-      </p>
-
-    </footer>
-
-  </main>
-
-</body>
-
-</html>    <!-- COLLECTIONS -->
-    <section class="collections">
-
-      <p class="section-label">
-        Things that live here
-      </p>
-
-
-      <!-- CORPORATE SPARKLES -->
-      <article class="collection sparkles">
-
-        <span class="number">01</span>
-
-        <h2>
-          Corporate Sparkles ✦
-        </h2>
-
-        <p>
-          mini desserts brought into corporate environments under the
-          assumption that sugar improves morale
-          (and such calories go to the heart not the stomach).
-        </p>
-
-        <a href="corporate-sparkles.html">
-          .. stuff ..
-        </a>
-
-      </article>
-
-
-      <!-- ART THINGIES -->
-      <article class="collection art right">
-
-        <span class="number">02</span>
-
-        <h2>
-          Art Thingies<br>
-          That Didn't Fail
-        </h2>
-
-        <p class="title-aside">
-          maybe I'll change this later
-        </p>
-
-        <p>
-          Things I made that passed some standards.
-        </p>
-
-        <a href="art-thingies.html">
-          .. stuff ..
-        </a>
-
-      </article>
-
-
-      <!-- LORE -->
-      <article class="collection lore">
-
-        <span class="number">03</span>
-
-        <h2>
-          Lore Nobody<br>
-          Requested -literally! 
-        </h2>
-
-        <p>
-          questionable decisions, messy conversations,
-          chaos, and a bunch of context
-          literally nobody asked for.
-        </p>
-
-        <a href="lore.html">
-          .. stuff ..
-        </a>
-
-      </article>
-
-
-      <!-- EVERYTHING ELSE -->
       <article class="collection other">
 
         <span class="number">+</span>
@@ -461,7 +385,10 @@
     </section>
 
 
-    <!-- DISCLAIMER -->
+    <!-- =====================
+         DISCLAIMER
+         ===================== -->
+
     <footer>
 
       <p class="disclaimer">
