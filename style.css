@@ -1,31 +1,335 @@
-.sparkles .number {
-  color: #E6A817;
+/* =========================
+   NORHAN SAYS
+   ========================= */
+
+* {
+  box-sizing: border-box;
 }
 
-.art .number {
-  color: #3659B8;
+html {
+  scroll-behavior: smooth;
 }
 
-.lore .number {
-  color: #9A3F5F;
+body {
+  margin: 0;
+  background: #f7f4ef;
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-.collection h2,
-.collection a {
+
+/* =========================
+   PAGE FRAME
+   ========================= */
+
+main {
+  width: calc(100% - 80px);
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 70px 75px;
+
+  border: 1px solid #222;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+  min-height: 75vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: clamp(4.5rem, 11vw, 8rem);
+  font-weight: 500;
+  letter-spacing: -5px;
+  line-height: 0.82;
+
+  margin: 0 0 55px;
+}
+
+.intro {
+  max-width: 760px;
+
+  font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+  line-height: 1.3;
+
+  margin: 0 0 35px;
+}
+
+.mini-bio {
+  max-width: 580px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+.bio-aside {
+  display: block;
+  margin-top: 5px;
+
+  opacity: 0.55;
+  font-style: italic;
+}
+
+
+/* =========================
+   COLLECTIONS
+   ========================= */
+
+.collections {
+  margin-top: 70px;
+  border-top: 1px solid #222;
+  padding-top: 30px;
+}
+
+.section-label {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  margin: 0 0 100px;
+}
+
+
+/* =========================
+   EACH COLLECTION
+   ========================= */
+
+.collection {
+  position: relative;
+
+  max-width: 600px;
+
+  margin-bottom: 140px;
+}
+
+.collection.right {
+  margin-left: auto;
+  text-align: right;
+}
+
+.number {
+  display: block;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 18px;
+}
+
+.collection h2 {
+  font-size: clamp(2.5rem, 6vw, 4.7rem);
+  font-weight: 400;
+
+  letter-spacing: -2px;
+  line-height: 0.95;
+
+  margin: 0 0 25px;
+
   transition: color 0.25s ease;
+}
+
+.collection p {
+  max-width: 470px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+
+  margin: 0 0 25px;
+}
+
+.collection.right p {
+  margin-left: auto;
+}
+
+.collection a {
+  display: inline-block;
+
+  color: #222;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #222;
+  padding-bottom: 4px;
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.collection a:hover {
+  border-color: currentColor;
+}
+
+
+/* =========================
+   LITTLE ASIDES
+   ========================= */
+
+.title-aside {
+  margin-top: -12px !important;
+  margin-bottom: 25px !important;
+
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 0.85rem !important;
+
+  font-style: italic;
+  opacity: 0.5;
+}
+
+
+/* =========================
+   SECTION COLORS
+   ========================= */
+
+/* Corporate Sparkles */
+
+.sparkles .number {
+  color: #d89b16;
 }
 
 .sparkles:hover h2,
 .sparkles:hover a {
-  color: #E6A817;
+  color: #d89b16;
+}
+
+
+/* Art Thingies */
+
+.art .number {
+  color: #3659b8;
 }
 
 .art:hover h2,
 .art:hover a {
-  color: #3659B8;
+  color: #3659b8;
+}
+
+
+/* Lore */
+
+.lore .number {
+  color: #9a3f5f;
 }
 
 .lore:hover h2,
 .lore:hover a {
-  color: #9A3F5F;
+  color: #9a3f5f;
+}
+
+
+/* =========================
+   OTHER THINGS
+   ========================= */
+
+.collection.other {
+  margin-bottom: 120px;
+}
+
+.other .number {
+  color: #777;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  border-top: 1px solid #222;
+  padding-top: 30px;
+}
+
+.disclaimer {
+  max-width: 550px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.6;
+
+  opacity: 0.55;
+  font-style: italic;
+
+  margin: 0;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+  main {
+    width: calc(100% - 30px);
+    margin: 15px auto;
+
+    padding: 45px 25px;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+
+  h1 {
+    font-size: clamp(4rem, 22vw, 6rem);
+    letter-spacing: -4px;
+
+    margin-bottom: 45px;
+  }
+
+  .intro {
+    font-size: 1.5rem;
+  }
+
+  .collections {
+    margin-top: 50px;
+  }
+
+  .section-label {
+    margin-bottom: 75px;
+  }
+
+  .collection,
+  .collection.right {
+    max-width: 100%;
+
+    margin-left: 0;
+    margin-bottom: 100px;
+
+    text-align: left;
+  }
+
+  .collection.right p {
+    margin-left: 0;
+  }
+
+  .collection h2 {
+    font-size: clamp(2.6rem, 13vw, 4rem);
+  }
+
 }
