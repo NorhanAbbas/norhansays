@@ -1,123 +1,97 @@
-/* =========================
-   NORHAN SAYS
-   ========================= */
-
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
+  min-height: 100vh;
+
   background: #f7f4ef;
   color: #222;
+
   font-family: Georgia, "Times New Roman", serif;
 }
 
 
-/* =========================
-   PAGE FRAME
-   ========================= */
+/* MAIN PAGE */
 
 main {
-  width: calc(100% - 80px);
-  max-width: 1000px;
+  width: 90%;
+  max-width: 760px;
+
+  padding: 60px;
   margin: 40px auto;
-  padding: 70px 75px;
 
   border: 1px solid #222;
 }
 
 
-/* =========================
-   HERO
-   ========================= */
-
-.hero {
-  min-height: 75vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+/* NORHAN SAYS */
 
 h1 {
-  font-size: clamp(4.5rem, 11vw, 8rem);
+  font-size: clamp(3.5rem, 10vw, 7rem);
   font-weight: 500;
-  letter-spacing: -5px;
-  line-height: 0.82;
+  letter-spacing: -4px;
+  line-height: 0.9;
 
-  margin: 0 0 55px;
+  margin: 0 0 50px;
 }
+
+
+/* INTRO */
 
 .intro {
-  max-width: 760px;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  line-height: 1.35;
 
-  font-size: clamp(1.6rem, 3.2vw, 2.3rem);
-  line-height: 1.3;
-
-  margin: 0 0 35px;
+  margin-bottom: 35px;
 }
 
+
+/* MINI BIO */
+
 .mini-bio {
-  max-width: 580px;
+  max-width: 650px;
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.8;
 
-  margin: 0;
+  margin-bottom: 70px;
 }
 
 .bio-aside {
-  display: block;
-  margin-top: 5px;
-
-  opacity: 0.55;
+  opacity: 0.6;
   font-style: italic;
 }
 
 
-/* =========================
-   COLLECTIONS
-   ========================= */
+/* THINGS THAT LIVE HERE */
 
 .collections {
-  margin-top: 70px;
   border-top: 1px solid #222;
   padding-top: 30px;
 }
 
 .section-label {
   font-family: Arial, Helvetica, sans-serif;
-
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: bold;
 
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 
-  margin: 0 0 100px;
+  margin: 0 0 65px;
 }
 
 
-/* =========================
-   EACH COLLECTION
-   ========================= */
+/* INDIVIDUAL SECTIONS */
 
 .collection {
-  position: relative;
-
-  max-width: 600px;
-
-  margin-bottom: 140px;
+  margin-bottom: 85px;
 }
 
 .collection.right {
-  margin-left: auto;
   text-align: right;
 }
 
@@ -127,45 +101,54 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   font-weight: bold;
-
   letter-spacing: 2px;
 
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
+
+/* SECTION TITLES */
+
 .collection h2 {
-  font-size: clamp(2.5rem, 6vw, 4.7rem);
-  font-weight: 400;
+  color: #222;
 
-  letter-spacing: -2px;
-  line-height: 0.95;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 500;
 
-  margin: 0 0 25px;
+  line-height: 1;
+  letter-spacing: -1.5px;
+
+  margin: 0 0 20px;
 
   transition: color 0.25s ease;
 }
 
+
+/* SECTION DESCRIPTIONS */
+
 .collection p {
-  max-width: 470px;
+  max-width: 520px;
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.7;
 
-  margin: 0 0 25px;
+  margin: 0 0 20px;
 }
 
 .collection.right p {
   margin-left: auto;
 }
 
-.collection a {
-  display: inline-block;
 
+/* LINKS */
+
+.collection a {
   color: #222;
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: bold;
 
   text-transform: uppercase;
@@ -174,66 +157,50 @@ h1 {
   text-decoration: none;
 
   border-bottom: 1px solid #222;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
 
-  transition:
-    color 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.collection a:hover {
-  border-color: currentColor;
+  transition: color 0.25s ease;
 }
 
 
-/* =========================
-   LITTLE ASIDES
-   ========================= */
+/* LITTLE ART COMMENT */
 
 .title-aside {
-  margin-top: -12px !important;
-  margin-bottom: 25px !important;
+  margin-top: -10px !important;
 
   font-family: Georgia, "Times New Roman", serif !important;
   font-size: 0.85rem !important;
 
   font-style: italic;
-  opacity: 0.5;
+  opacity: 0.55;
 }
 
 
-/* =========================
-   SECTION COLORS
-   ========================= */
-
-/* Corporate Sparkles */
+/* VERY SMALL COLOR ACCENTS */
 
 .sparkles .number {
-  color: #d89b16;
+  color: #c78d16;
 }
-
-.sparkles:hover h2,
-.sparkles:hover a {
-  color: #d89b16;
-}
-
-
-/* Art Thingies */
 
 .art .number {
   color: #3659b8;
 }
 
-.art:hover h2,
-.art:hover a {
-  color: #3659b8;
+.lore .number {
+  color: #9a3f5f;
 }
 
 
-/* Lore */
+/* COLORS ONLY APPEAR MORE ON HOVER */
 
-.lore .number {
-  color: #9a3f5f;
+.sparkles:hover h2,
+.sparkles:hover a {
+  color: #c78d16;
+}
+
+.art:hover h2,
+.art:hover a {
+  color: #3659b8;
 }
 
 .lore:hover h2,
@@ -242,22 +209,7 @@ h1 {
 }
 
 
-/* =========================
-   OTHER THINGS
-   ========================= */
-
-.collection.other {
-  margin-bottom: 120px;
-}
-
-.other .number {
-  color: #777;
-}
-
-
-/* =========================
-   FOOTER
-   ========================= */
+/* DISCLAIMER */
 
 footer {
   border-top: 1px solid #222;
@@ -265,71 +217,48 @@ footer {
 }
 
 .disclaimer {
-  max-width: 550px;
-
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.6;
 
-  opacity: 0.55;
+  opacity: 0.65;
   font-style: italic;
 
   margin: 0;
 }
 
 
-/* =========================
-   MOBILE
-   ========================= */
+/* MOBILE */
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
   main {
     width: calc(100% - 30px);
-    margin: 15px auto;
-
     padding: 45px 25px;
-  }
-
-  .hero {
-    min-height: 80vh;
+    margin: 15px auto;
   }
 
   h1 {
-    font-size: clamp(4rem, 22vw, 6rem);
-    letter-spacing: -4px;
-
-    margin-bottom: 45px;
+    letter-spacing: -2px;
+    margin-bottom: 35px;
   }
 
-  .intro {
-    font-size: 1.5rem;
-  }
-
-  .collections {
-    margin-top: 50px;
+  .mini-bio {
+    margin-bottom: 55px;
   }
 
   .section-label {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
 
   .collection,
   .collection.right {
-    max-width: 100%;
-
-    margin-left: 0;
-    margin-bottom: 100px;
-
     text-align: left;
+    margin-bottom: 65px;
   }
 
   .collection.right p {
     margin-left: 0;
-  }
-
-  .collection h2 {
-    font-size: clamp(2.6rem, 13vw, 4rem);
   }
 
 }
